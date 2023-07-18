@@ -58,14 +58,14 @@ p{
 }
 .aside {
     background-color: hsl(240, 100%, 5%);
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     box-sizing: border-box;
-    float: right;
-    right: 0;
-    margin-right: 200px;
-    margin-top: 90px;
-    position: absolute;
+    top: 85px;
+    bottom: 500px;
+    position: relative;
+    margin: 0px 0 70px;
+    padding: 0 2%;
    
 }
 .img {
@@ -74,8 +74,8 @@ p{
 }
 .image-and-aside {
     /* height: 100vh; */
-    /* display: flex; */
-    align-items:flex-start; 
+    display: flex; 
+    align-items:center; 
     padding:0 11%;
     justify-content: space-between;
     
@@ -104,7 +104,7 @@ h2 {
 }
 .display-flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 20px;
     padding: 0 11%;
 }
@@ -116,4 +116,7 @@ h2 {
     margin: 0px 0 40px;
     padding-left: 5%;
     line-height: 1.8;
+}
+.number {
+    color: hsl(233, 8%, 79%);
 }
