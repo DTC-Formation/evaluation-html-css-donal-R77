@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-   
+    font-family: 'Inter', sans-serif;
+    
 }
 p{
     font-size: 15px;
@@ -22,7 +23,7 @@ p{
 @media screen and (min-width:992px) {}
 
 /*extra large*/
-@media screen and (min-width:1200px) {}
+@media screen and (min-width:1440px) {}
 
 .header {
     position: fixed;
@@ -58,30 +59,36 @@ p{
 }
 .aside {
     background-color: hsl(240, 100%, 5%);
-    width: 500px;
-    height: 500px;
+    width: 320px;
+    height: 450px;
     box-sizing: border-box;
     top: 85px;
     bottom: 500px;
     position: relative;
-    margin: 0px 0 70px;
-    padding: 0 2%;
+    margin: 0 0 70px;
+    padding: 0 10px 0 10%;
+    line-height: 1.4;
+    
    
 }
 .img {
     width: 830px;
-    height: 350px;
+    height: 400px;
 }
 .image-and-aside {
     /* height: 100vh; */
-    display: flex; 
+    /* display: flex; 
     align-items:center; 
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 0px;
     padding:0 11%;
-    justify-content: space-between;
     
 }
 .new {
     color: hsl(35, 77%, 62%);
+    margin-top: 20px;
     
 }
 .content-read-and-title{
@@ -90,16 +97,23 @@ p{
 }
 .title-bright {
     font-size: 40px;
+    
 }
-h2 {
+h3 {
     color: hsl(36, 100%, 99%);
+    font-weight: 800;
+}
+h3:hover {
+    color: hsl(35, 77%, 62%);
 }
 .contain-title {
     width: 300px;
 }
 .text_and_readMore {
-    width: 300px;
-    line-height: 1.2;
+    width: 320px;
+    margin: 10px 0 0 13rem;
+   
+    
     
 }
 .display-flex {
@@ -112,6 +126,12 @@ h2 {
     float: left;
     width: 100px;
 }
+img[alt="image-laptop"] {
+    margin-left: 8rem;
+}
+img[alt="image-gaming"] {
+    margin-left: 6rem;
+}
 .space {
     margin: 0px 0 40px;
     padding-left: 5%;
@@ -119,4 +139,38 @@ h2 {
 }
 .number {
     color: hsl(233, 8%, 79%);
+}
+input {
+    padding: 5px;
+    width: 50%;
+    height: 40px;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    color: hsl(36, 100%, 99%);
+    font-weight: 600;
+    margin-top: 20px;
+}
+input:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+.h-elec {
+    border-bottom: 2px solid hsl(236, 13%, 42%); 
+    line-height: 1.5;
+    
+}
+.down {
+    border-bottom: 2px solid hsl(236, 13%, 42%); 
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.mt-5 {
+    margin-top: 10px;
+}
+.bottom {
+   margin-top: 20px;
+   line-height: 2;
+}
+h4:hover {
+    color: hsl(35, 77%, 62%);
 }
